@@ -28,7 +28,8 @@ body {
     flex: 1 0 auto;
     margin: 50px  auto;
     display: block;
-    padding: 20px
+    padding: 20px;
+    overflow: auto;
 }
 
 
