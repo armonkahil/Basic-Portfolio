@@ -4,7 +4,7 @@
       <meta charset = "UTF-8">
       <title>Contacts</title>
       <link rel = "stylesheet" type = "text/css" href="assets/css/reset.css">
-      <link rel = "stylesheet" type = "text/css" href="assets/css/style.css" >
+      <link rel = "stylesheet" type = "text/css" href="assets/css/style.css">
    </head>
    <body>
 <!--        Main Header Section-->
@@ -20,18 +20,25 @@
    </header>
 </div>
 <!--       Main Section Container-->
-      <main class ="container clearfix">
+      <main class ="container">
          <h1>Contact</h1>
           <hr>
-         <form class="contactForm">
-         Name<br>
-            <input type="text" name="fullname"><br>
-            Email<br>
-            <input type="email" name="email"><br>
-            Message<br>
-            <textarea>
-            </textarea><br>
-            <input type="submit" value="Submit">
+         <form id="contactForm">
+            <ul>
+               <li>
+                  <label for="name">Name</label>
+                  <input type = "text" id="name" name="name" required="required">
+               </li>
+               <li>
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required="required">
+               </li>
+               <li>
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" required="required"></textarea>
+               </li>
+               </ul>
+               <input alt="Submit" type="submit" value="Submit">
          </form>
       </main>
 <!--       Footer-->
