@@ -1,192 +1,191 @@
 /*Global Attributes*/
 /*Sticky Footer*/
 html, body {
-    height: 100%;
-    background-image: url("../images/px_by_Gre3g.png");
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-  }
- 
+	height: 100%;
+	background-image: url("../images/px_by_Gre3g.png");
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
 *, *::after, *::before {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
- 
 .clearfix::after {
-    content: " ";
-    display: block;
-    clear: both;    
+	content: " ";
+	display: block;
+	clear: both;
 }
-
 body {
-    font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif; 
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-    align-content: center;
+	font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	align-content: center;
 }
-
+img {
+	border-radius: 5px;
+}
 /*Header and Nav Bar Styling*/
 #Banner{
-    background: #ffffff;
-    width:100%;
-    border-bottom: 2px solid #777777;
+	background: #ffffff;
+	width:100%;
+	border-bottom: 2px solid #777777;
 }
-
-.navBar, a {
-    display: block;
-    float: right;        
+.navBar a {
+	display: block;
+	float: right;
+	border-right: 1px solid #777777;
+	padding: 10px;
 }
-
-a {
-    padding: 10px;
+nav a:first-child {
+	border: none;
 }
-
 a:link {
-    color: #777777; 
-    background-color: transparent; 
-    text-decoration: none;
-  }
-  
-a:visited {
-    color: #777777;
-    background-color: transparent;
-    text-decoration: none;
-  }
-  
-a:hover {
-    color: #4aaaa5;
-    background-color: transparent;
-    text-decoration: underline;
-  }
-  
-a:active {
-    color: #777777;
-    background-color: transparent;
-    text-decoration: underline;
+	color: #777777;
+	background-color: transparent;
+	text-decoration: none;
 }
-
+a:visited {
+	color: #777777;
+	background-color: transparent;
+	text-decoration: none;
+}
+a:hover {
+	color: #4aaaa5;
+	background-color: transparent;
+	text-decoration: underline;
+}
+a:active {
+	color: #777777;
+	background-color: transparent;
+	text-decoration: underline;
+}
+/*Main Content Styling*/
+.container {
+	width: 100%;
+	max-width: 960px;
+	height: 100px;
+	background-color: #ffffff;
+	border: 3px solid #dddddd;
+	flex: 1 0 auto;
+	margin: 50px auto;
+	/* margin-bottom: 0px; */
+	display: block;
+	overflow: hidden;
+	padding: 20px;
+	border-radius: 5px;
+}
 /*Footer Styling*/
 footer {
-    border-top: 8px solid #4aaaa5;
-    background-color: #666666;
-    height: 60px;
-    text-align: center;
-    color: #ffffff;
-    padding: 20px;
-    clear: both;
-    flex-shrink: 0;
+	border-top: 8px solid #4aaaa5;
+	background-color: #666666;
+	height: auto;
+	text-align: center;
+	color: #ffffff;
+	padding: 20px;
+	clear: both;
+	flex-shrink: 0;
+	width: 100%;
 }
-
-
-/*Main Content Styling*/
-
-.container {
-    width: 960px;
-    height: 500px;
-    background-color: #ffffff;
-    border: 3px solid #dddddd;
-    flex: 1 0 auto;
-    margin: 50px  auto;
-    margin-bottom: 200px;
-    display: block;
-    padding: 20px;
-    align-content: center;
-    overflow: hidden; 
-    
-}
-
 .mainHeading {
-    background-color: #ffffff;
-    width: 960px;
-    margin: auto;
-    flex-shrink: 0;
-    padding: 20px;
+	background-color: #ffffff;
+	width: 960px;
+	margin: auto;
+	flex-shrink: 0;
+	padding: 20px;
 }
-
-
 .nameHead {
-    background: #4aaaa5;
-    color: #ffffff;
-    margin-bottom: 0;
-    font-size: 40px;
-    float: left;
-    padding-bottom: 0;
-    border: 0;
+	background: #4aaaa5;
+	color: #ffffff;
+	margin-bottom: 0;
+	font-size: 40px;
+	float: left;
+	padding-bottom: 0;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
 }
-
 h1 {
-    color: #4aaaa5;
-    font-family: "Georgia", "Times", "Times New Roman", serif;
-    padding: 10px;
-    font-size: xx-large;
+	color: #4aaaa5;
+	font-family: "Georgia", "Times", "Times New Roman", serif;
+	padding: 10px;
+	font-size: xx-large;
 }
-
-hr{
-    height: 5px;
-    background: #cccccc;
-    margin: 20px;
+hr {
+	height: 5px;
+	background: #cccccc;
+	margin: 20px;
 }
- 
-
 p {
-    margin: 20px 15px; 
-    padding: 5px;
-    font-size: 20px;
-    line-height: 1.3;
-    color: #777777;
-    text-align: justify;
-    text-indent: 50px;
+	margin: 20px 15px;
+	padding: 5px;
+	font-size: 20px;
+	line-height: 1.3;
+	color: #777777;
+	text-align: justify;
+	margin-bottom: 0;
 }
-
-
-
 #profilePic {
-    width: 220px;
-    height: auto;
-    float: left;
-    margin: 15px;
+	max-width: 220px;
+	height: auto;
+	float: left;
+	margin: 15px;
 }
 /*Contact Page Styling*/
-#contactForm {
-   padding: 10px;
-   width: 100%;
-   font-family: Arial, Helvetica, sans-serif;
-
+form {
+	padding: 10px;
+	width: 100%;
 }
 #name, #email {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 5px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #777777;
+	border-radius: 3px;
 }
-
-#message{
-    display:block;
-    width: 100%;
-    height: 200px;
+textarea {
+	width: 100%;
+	height: 150px;
+	resize: none;
+	overflow: auto;
+	border: 1px solid #777777;
+	border-radius: 3px;
 }
-
 input[type=submit] {
-    background-color: #4aaaa5;
-    color: #ffffff;
-    font-size: large;
-    margin: 10px 0;
-    border: none;
+	background-color: #4aaaa5;
+	color: #ffffff;
+	font-size: large;
+	margin: 10px 0;
+	border-radius: 3px;
 }
-
 /*Portfolio Page Styling*/
- 
-img {
-    width: 184px;
-    height: auto;
+.portContainer {
+	position: relative;
+	float: left;
+	margin: 10px 20px;
+	overflow: hidden;
 }
-
-a.projectLink {
-    padding: 0 10px;
-    float: left;
-    margin: 0 15px;
-    
+.portContainer img {
+	width: 100%;
+	/* opacity: 0.8;
+	*/
 }
-
+.portContainer h3 {
+	
+	width: 100%;
+	padding: 5px;
+	font-weight: 400;
+	color: #ffffff;
+	text-align: center;
+	background: #4aaaa5;
+    opacity: .7;
+    position: absolute;
+	bottom: 10px;
+}
+/*Contact page*/
+ul, li {
+	list-style-type: none;
+}
+input {
+	border: 1px solid;
+}
